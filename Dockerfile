@@ -18,7 +18,7 @@ RUN pip install -r requirements.txt
 ADD /docker_config/supervisor_app.conf /etc/supervisor/supervisord.conf
 ADD /docker_config/nginx_app.conf /etc/nginx/nginx.conf
 
-EXPOSE 80 5000
+EXPOSE 80
 
 CMD ["supervisord", "-n"]
 
